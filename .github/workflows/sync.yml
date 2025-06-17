@@ -27,6 +27,7 @@ jobs:
           upstream_sync_repo: LibreSpark/LibreTV
           upstream_sync_branch: main
           target_sync_branch: main
+          # 使用拥有 workflow 权限的 PAT 来进行推送
           target_repo_token: ${{ secrets.PAT }}
 
       - name: Sync check
